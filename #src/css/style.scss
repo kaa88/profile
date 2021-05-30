@@ -1,0 +1,66 @@
+@import "_reset";
+@import "_noscript";
+@import "_mixins";
+
+// Colors
+$color-1: #fff;
+$color-2: #000;
+// $color-3: #7F0037;
+$color-3: #A30046;
+$color-4: #313BA9;
+$color-5: #3AA171;
+$color-6: rgba(0, 0, 0, 0.12);
+
+
+// Fonts
+// Roboto
+@import "fontscript";
+$rbm: RobotoMono, monospace;
+$ops: OpenSans, Arial, sans-serif;
+
+
+// Transitions
+$timer-hover: 0.1s;
+$timer-menu: 0.5s;
+$timer-modal: 0.8s;
+$timer-select: 0.2s;
+
+
+// Media breakpoints (desktop first):
+// 1275
+// 700
+// 537
+// 480
+
+// $mobile: 768;
+
+// $media-header: $mobile;
+// $media-header2: 390;
+// $media-menu: $mobile;
+
+// $media-footer: 850;
+// $media-footer2: 530;
+
+
+@import "_icons";
+@import "_main";
+@import "_print";
+
+// TO DO:
+// фон клава!
+// улучшить дизайн окон описания работ (м.б. раскрывающийся текст)
+// карусель скилов
+// hello world background
+
+
+// Дополнительно
+// $maxWidth: ; // для скалирования шрифтов? и retina
+
+
+// Formulas
+
+// width: calc(900 / #{$media} * 100vw);
+// width: calc(900 * 0.8 / #{$media} * 100vw + 900 * 0.2 * 1px);
+
+// clip-path: polygon(x y, x y, x y, x y...); // отсчет от левого верхнего угла
+// clip-path: polygon(0px 0px, 50px 0px, 50px 50px, 0px 50px);

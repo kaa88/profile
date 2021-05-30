@@ -1,0 +1,18 @@
+@media print {
+	* {
+		color: black !important;
+		background: none !important;
+	}
+	.container {padding: 0;}
+
+	.header__print-address {display: block;}
+
+	.noscript-alert,
+	.menu,
+	.button
+		{display: none;}
+
+	.header {
+		position: relative;
+	}
+}

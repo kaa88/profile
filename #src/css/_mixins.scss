@@ -1,0 +1,25 @@
+// Mixins (@include)
+@mixin text-nowrap() {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@mixin text-nowrap-multi($lines) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lines;
+	overflow: hidden;
+}
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: local($font_name),
+			url("../fonts/#{$file_name}.woff2") format("woff2"),
+			url("../fonts/#{$file_name}.woff") format("woff"), 
+			url('../fonts/#{$file_name}.ttf') format("truetype");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+// /
