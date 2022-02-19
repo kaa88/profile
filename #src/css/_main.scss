@@ -326,6 +326,7 @@ body {
 	}
 	@media screen and (max-width: 1275px) {
 		height: fit-content;
+		max-height: 3000px;
 		background-image: linear-gradient(to top, $color-6, transparent 98%);
 		margin-bottom: 20px;
 		&__scrolling-elements {
