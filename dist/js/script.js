@@ -157,7 +157,7 @@ const modal = {
 			this.on[currentModal.id].close(
 				e, 
 				currentModal.querySelector('.' + this.elemName + '__content > *:not(.' + this.elemName + '__close-button)'),
-				0
+				this.timeout
 			);
 		modal.check();
 	},
@@ -167,7 +167,7 @@ const modal = {
 			if (this.windows[i].classList.contains('_open')) {
 				this.windows[i].classList.remove('_open');
 				if (this.on[this.windows[i].id] && this.on[this.windows[i].id].close)
-					this.on[this.windows[i].id].close(0,0,0);
+					this.on[this.windows[i].id].close(0,0,this.timeout);
 			}
 		}
 		modal.check();
