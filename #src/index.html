@@ -1,14 +1,14 @@
 @@include('_head.html', {
 	'title': 'Andrei K | WEB-developer | Profile',
 	'descr': 'Верстка сайтов. HTML, CSS, JavaScript. Веб-разработчик Андрей Константинов.',
-	'robots': 'noindex, nofollow',
+	'robots': 'index, nofollow',
 })
 <body>
 @@include('_noscript.html')
 
 <!-- @@include('_header.html') -->
 <script id="headerMenuOptions">
-	let headerMenuOptions = {}
+	// let headerMenuOptions = {}
 </script>
 <div class="bg">
 	<picture>
@@ -56,6 +56,9 @@
 						<i class="icon icon-github" title="GitHub"></i>
 						<a href="https://github.com/kaa88" target="_blank" title="GitHub">github.com/kaa88</a>
 					</div> -->
+				</div>
+				<div class="profile__send-mail-link">
+					<a class="modal-link" href="#modal-form">Отправить сообщение</a>
 				</div>
 				<div class="profile__scrolling-elements">
 					<div class="profile__about">
@@ -216,10 +219,15 @@
 	</div>
 </main>
 
+<div class="up-button scroll-lock-item">
+	<i>&uarr;</i>
+</div>
+
 <!-- @@include('_footer.html') -->
-<!-- @@include('_modal.html') -->
+<section class="modal">
+	@@include('_modal-form.html')
+</section>
 	
-<!-- <div class="test-block">@@include('#templates.html')</div> -->
 @@include('_script.html')
 </body>
 </html>

@@ -1,3 +1,8 @@
+@import "front/modal";
+@import "front/form";
+@import "front/up_button";
+
+
 html {
 	scrollbar-width: thin;
 	scrollbar-color: $color-4 #ddd;
@@ -6,6 +11,12 @@ body {
 	background-color: $color-1;
 	font-family: $rbm;
 	color: #222;
+	&._locked {overflow: hidden;}
+	// Variables for JS manipulations
+	--header-height: unset;
+	--timer-menu: #{$timer-menu};
+	--timer-modal: #{$timer-modal};
+	
 	&::-webkit-scrollbar {
 		width: 5px;
 		height: 5px;
@@ -57,6 +68,8 @@ body {
 .profile {
 	flex-shrink: 0;//
 	max-width: 600px;
+	height: 100%;
+	max-height: 900px;
 	padding: 20px 8px 20px 18px;
 	border-radius: 10px;
 	background-image: linear-gradient(to left, $color-6, transparent 98%);
@@ -183,6 +196,21 @@ body {
 			font-family: $ops;
 			color: $color-5;
 			&:hover {text-decoration: underline;}
+		}
+	}
+	&__send-mail-link {
+		grid-column: span 2;
+		margin: -10px 0;
+		text-align: center;
+		a, a:visited {
+			font-family: $ops;
+			font-size: 14px;
+			text-decoration: underline;
+			color: #555;
+			transition: all $timer-hover;
+			&:hover {
+				color: #222;
+			}
 		}
 	}
 	&__scrolling-elements {

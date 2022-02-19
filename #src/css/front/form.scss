@@ -1,0 +1,98 @@
+.contact-form {
+	width: 100%;
+	max-width: 300px;
+	font-size: 0;
+	input, textarea {
+		width: 100%;
+		height: 30px;
+		margin-bottom: 10px;
+		padding: 0 10px;
+		box-shadow: inset 0 1000px 0 #eee; // чтобы при автозаполнении не менялся цвет
+		&::placeholder {
+			color: inherit;
+		}
+		&._error {
+			outline: solid 1px $color-3;
+			// box-shadow: inset 0 1000px 0 0 #E5C6C8;
+		}
+	}
+	textarea {
+		resize: none;
+		height: 60px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	&__button {
+		display: block;
+		margin: 0 auto;
+		width: 200px;
+		height: 40px;
+		background-color: $color-5;
+		color: #fff;
+		font-weight: bold;
+		position: relative;
+		border-radius: 10px;
+		overflow: hidden;
+		.progress {
+			position: absolute;
+			top: 0;
+			left: 0;
+			._sending & {display: flex;}
+		}
+	}
+}
+._sending {
+	position: relative;
+	&:before {
+		content: "";
+		background-color: transparent;
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+}
+.form-report {
+	height: 18px;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	visibility: hidden;
+	&.ok, &.er {visibility: visible;}
+	&.ok {color: $color-5}
+	&.er {color: $color-3}
+}
+@keyframes progress-animation {
+	from {transform: scale(1);}
+	to {transform: scale(2);}
+}
+.progress {
+	$box-height: 20;
+	$box-width: $box-height * 3 + 20;
+	width: 100%;
+	height: 100%;
+	background-color: inherit;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	&__box {
+		width: $box-width+px;
+		height: $box-height+px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		i {
+			flex: 0 0 $box-height*0.5+px;
+			height: $box-height*0.5+px;
+			background-color: #555;
+			border-radius: 50%;
+			margin: 0 5px;
+			animation: progress-animation 0.8s infinite alternate ease-in;
+			&:nth-of-type(2) {animation-delay: 0.2s;}
+			&:nth-of-type(3) {animation-delay: 0.4s;}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.up-button {
+	margin-right: 20px;
+	position: fixed;
+	right: 10px;
+	bottom: 30px;
+	width: 50px;
+	height: 50px;
+	border: solid 5px $color-5;
+	border-radius: 50%;
+	box-shadow: 0 0 9px 1px #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	cursor: pointer;
+	user-select: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility .3s, opacity .3s;
+	&._visible {
+		visibility: visible;
+		opacity: 1;
+	}
+	i {
+		font-size: 30px;
+		margin-bottom: 12px;
+	}
+}

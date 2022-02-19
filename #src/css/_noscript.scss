@@ -1,18 +1,19 @@
 .noscript-alert {
 	position: fixed !important;
 	bottom: 0 !important;
+	left: 0 !important;
 	z-index: 999 !important;
-	width: 100% !important;
-	padding: 24px !important;
-	background-color: #ddd !important;
+	width: 100vw !important;
+	padding: 25px !important;
+	background-color: #ccc !important;
 	box-shadow: 0 -2px 7px 0 #333 !important;
 	text-align: center !important;
 	font-family: Arial, sans-serif !important;
 	font-size: 18px !important;
 	line-height: 26px !important;
-	color: black !important;
-}
-.noscript-alert a, .noscript-alert a:visited {
-	text-decoration: underline !important;
-	color: blue !important;
+	color: #000 !important;
+	a, a:visited {
+		text-decoration: underline !important;
+		color: #00f !important;
+	}
 }

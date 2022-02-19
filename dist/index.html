@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>Andrei K | WEB-developer | Profile</title>
 	<meta name="description" content="Верстка сайтов. HTML, CSS, JavaScript. Веб-разработчик Андрей Константинов.">
-	<meta name="robots" content="noindex, nofollow">
+	<meta name="robots" content="index, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <script src="https://use.fontawesome.com/78ee93020b.js"></script> -->
-	<!-- <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32"> -->
-	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
-	<!-- <link rel="stylesheet" href="libs/jquery/jquery-ui.css"> -->
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -23,7 +19,7 @@
 
 
 <script id="headerMenuOptions">
-	let headerMenuOptions = {}
+	// let headerMenuOptions = {}
 </script>
 <div class="bg">
 	<picture>
@@ -71,6 +67,9 @@
 						<i class="icon icon-github" title="GitHub"></i>
 						<a href="https://github.com/kaa88" target="_blank" title="GitHub">github.com/kaa88</a>
 					</div> -->
+				</div>
+				<div class="profile__send-mail-link">
+					<a class="modal-link" href="#modal-form">Отправить сообщение</a>
 				</div>
 				<div class="profile__scrolling-elements">
 					<div class="profile__about">
@@ -231,13 +230,39 @@
 	</div>
 </main>
 
+<div class="up-button scroll-lock-item">
+	<i>&uarr;</i>
+</div>
 
 
+<section class="modal">
+	<div class="modal__window" id="modal-form">
+		<div class="modal__wrapper">
+			<div class="modal__content">
+				<div class="modal__close-button">x</div>
+
+				<form class="contact-form" name="contact-form" action="#">
+					<p>Привет! Какой вопрос? =)</p>
+					<div class="form-report"></div>
+					<input class="contact-form__name _req" type="text" name="name" placeholder="Имя">
+					<input class="contact-form__email _req" type="text" name="email" placeholder="Email">
+					<textarea class="contact-form__message _req" name="message" placeholder="Сообщение"></textarea>
+					<button class="contact-form__button" type="submit">
+						Отправить
+						<!-- Sending progress bar inside the button -->
+						<span class="progress">
+							<span class="progress__box">
+								<i></i><i></i><i></i>
+							</span>
+						</span>
+					</button>
+				</form>
+			
+			</div>
+		</div>
+	</div>
+</section>
 	
-
-<!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
-<!-- <script src="libs/jquery/jquery.min.js"></script> -->
-<!-- <script src="libs/jquery/jquery-ui.min.js"></script> -->
 <!-- <script src="js/script.js"></script> -->
 <script src="js/script.min.js"></script>
 </body>

@@ -1,0 +1,381 @@
+<!-- ШАБЛОНЫ HTML ----------------------------------------->
+
+<!-- Swiper -->
+<div class="swiper-box">
+	<div class="banner__swiper swiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">slide 1</div>
+			<div class="swiper-slide">slide 2</div>
+			<div class="swiper-slide">slide 3</div>
+		</div>
+	</div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</div>
+
+
+<!-- Accordion (css version) -->
+<div class="css-accordion">
+	<input type="radio" name="accordion-radio" id="accordion-radio-1" checked>
+	<label class="css-accordion__item" for="accordion-radio-1">
+		<span class="css-accordion__item-header">Header</span>
+		<span class="css-accordion__item-content">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum sint animi perferendis earum cupiditate ea, nemo, debitis nisi quaerat adipisci!
+		</span>
+	</label>
+	<input type="radio" name="accordion-radio" id="accordion-radio-2">
+	<label class="css-accordion__item" for="accordion-radio-2">
+		<span class="css-accordion__item-header">Header</span>
+		<span class="css-accordion__item-content">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+		</span>
+	</label>
+	<input type="radio" name="accordion-radio" id="accordion-radio-3">
+	<label class="css-accordion__item" for="accordion-radio-3">
+		<span class="css-accordion__item-header">Header</span>
+		<span class="css-accordion__item-content">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum sint animi perferendis earum cupiditate ea, nemo, debitis nisi quaerat adipisci! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+		</span>
+	</label>
+</div>
+
+
+<!-- Accordion (js version) -->
+<div class="js__accordion accordion">
+	<div class="accordion__item">
+		<div class="accordion__item-header">Header</div>
+		<div class="accordion__item-content">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum sint animi perferendis earum cupiditate ea, nemo, debitis nisi quaerat adipisci!
+		</div>
+	</div>
+	<div class="accordion__item">
+		<div class="accordion__item-header">Header</div>
+		<div class="accordion__item-content">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+		</div>
+	</div>
+	<div class="accordion__item">
+		<div class="accordion__item-header">Header</div>
+		<div class="accordion__item-content">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum sint animi perferendis earum cupiditate ea, nemo, debitis nisi quaerat adipisci! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+		</div>
+	</div>
+</div>
+
+
+<!-- Spoiler -->
+<div class="spoiler">
+	<div class="spoiler__header">
+		<p>Spoiler</p>
+	</div>
+	<div class="spoiler__content">
+		<div class="spoiler__content-wrapper">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quis non sunt odit eos at neque eligendi, corrupti repellat vero id quos praesentium illum, quisquam aliquam minima inventore error placeat!</p>
+		</div>
+	</div>
+</div>
+
+
+<!-- Наверх (исчезающая кнопка) -->
+<div class="up-button scroll-lock-item">
+	<i class="icon-up">UP</i>
+</div>
+
+
+<!-- Форма с отправкой на почту -->
+<form class="contact-form" name="contact-form" action="#">
+	<div class="form-report"></div>
+	<input class="contact-form__name _req" type="text" name="name" placeholder="Name">
+	<input class="contact-form__email _req" type="text" name="email" placeholder="Email">
+	<input class="contact-form__phone" type="text" name="phone" placeholder="Phone">
+	<textarea class="contact-form__message" name="message" placeholder="Message"></textarea>
+	<button class="contact-form__button" type="submit">
+		Submit
+		<!-- Sending progress bar inside the button -->
+		<span class="progress">
+			<span class="progress__box">
+				<i></i><i></i><i></i>
+			</span>
+		</span>
+	</button>
+</form>
+
+
+<!-- Select (dropdown list) -->
+<div class="form__select select">
+	<div class="select__header">
+		<span class="select__header-text"></span>
+		<span class="select__header-icon"><i class="icon-play">#</i></span>
+	</div>
+	<div class="select__list-wrapper">
+		<!-- Script-generated list -->
+	</div>
+	<select name="select">
+		<option value="none" selected disabled>Select...</option>
+		<option value="opt 1">option 1</option>
+		<option value="opt 2">option 2</option>
+		<option value="opt 3">option 3</option>
+	</select>
+</div>
+
+
+<!-- Tabs (закладки) -->
+<div class="catalog__tabs tabs">
+	<div class="tabs__buttons">
+		<div class="tabs__btn _active">Product Information</div>
+		<div class="tabs__btn">Other details</div>
+	</div>
+	<div class="tabs__content">
+		<p class="tabs__content-item _active">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit.
+		</p>
+		<p class="tabs__content-item">
+			Obcaecati corporis aliquid, vel provident ducimus dolorem.
+		</p>
+	</div>
+</div>
+
+
+<!-- Input_checkbox -->
+<div class="form__checkbox checkbox">
+	<input type="checkbox" id="checkbox1" name="checked" value="ok">
+	<label for="checkbox1">
+		<span class="label-box"></span>
+		<span class="label-text">Checkbox</span>
+	</label>
+</div>
+
+
+<!-- Input_radio -->
+<div class="form__radio radio">
+	<input type="radio" id="radio1" name="form-radio" value="radio 1" checked>
+	<label for="radio1">
+		<span class="label-box"></span>
+		<span>Radio 1</span>
+	</label>
+	<input type="radio" id="radio2" name="form-radio" value="radio 2">
+	<label for="radio2">
+		<span class="label-box"></span>
+		<span class="label-text">Radio 2</span>
+	</label>
+</div>
+
+
+<!-- Input_range_colored -->
+<div class="input-range">
+	<input type="range" name="range" value="20" min="0" max="100" step="1">
+</div>
+
+
+<!-- Input_range_double (js version with 1 or 2 thumbs) -->
+<div class="form__input-range-dbl input-range-dbl" name="range"></div>
+<input class="form__ir-result1" type="number">
+<input class="form__ir-result2" type="number">
+
+
+<!-- Onload counter -->
+<div class="onload-counter">
+	<button class="test-button" onclick="onloadCounter1.startCounter(); onloadCounter2.startCounter()">Onload counter</button>
+	<p class="test-counter test-counter--1">0</p>
+	<p class="test-counter test-counter--2">0</p>
+</div>
+
+
+<!-- Video player -->
+<div class="content__video-player video-player">
+	<video src="videosample.mp4" preload="metadata"></video>
+	<div class="video-controls">
+		<div class="video-controls__area">
+			<div class="video-controls__area-btn">P</div>
+		</div>
+		<div class="video-controls__panel">
+			<button class="video-controls__play-pause">P</button>
+			<div class="video-controls__seek-bar">
+				<input type="range" value="0">
+			</div>
+			<div class="video-controls__volume">
+				<div class="video-controls__wrapper">
+					<div class="video-controls__volume-bar">
+						<input type="range">
+					</div>
+				</div>
+				<button class="video-controls__volume-btn">V</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Breadcrumbs (хлебные крошки) -->
+<nav class="banner__breadcrumbs breadcrumbs">
+	<a class="breadcrumbs__link" href="index.html">Home</a>
+	<span class="breadcrumbs__devider">></span>
+	<a class="breadcrumbs__link" href="activities.html">Lorem ipsum</a>
+	<span class="breadcrumbs__devider">></span>
+	<span class="breadcrumbs__this --collapsed">Dolor sit amet consectetur</span>
+</nav>
+
+
+<!-- Picture -->
+<picture>
+	<source media="(max-width: 910px)" srcset="img/banner-s.jpg, img/banner-s@2x.jpg 2x">
+	<img src="img/banner.jpg" srcset="img/banner@2x.jpg 2x" alt="" loading="lazy">
+	<!-- Один тэг img тоже работает -->
+</picture>
+
+
+<!-- Шаблон заполнения данных из JSON (пример) -->
+<!-- This is a slide pattern -->
+<div id="news-data-pattern">
+	<div class="swiper-slide">
+		<div class="newsline__news-card news-card" data-pattern="elem">
+			<div class="news-card__img">
+				<img alt="" data-pattern="img">
+			</div>
+			<div class="news-card__content">
+				<div class="news-card__logo"><i class="icon-logo"></i></div>
+				<div class="news-card__video" data-pattern="video"><i class="icon-play"></i></div>
+				<div class="news-card__wrapper">
+					<p class="news-card__g-card-date g-card-date" data-pattern="date"></p>
+					<p class="news-card__g-header-h4 g-header-h4" data-pattern="title"></p>
+					<p class="news-card__g-card-text g-card-text" data-pattern="text"></p>
+				</div>
+				<a class="news-card__g-link g-link" href="#" data-pattern="link">learn more</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- / pattern -->
+
+
+<!-- ШАБЛОНЫ CSS ------------------------------------------>
+<style>
+
+/* Формулы
+	width: calc(900 / #{$media} * 100vw);
+	width: calc(900 * 0.8 / #{$media} * 100vw + 900 * (1 - 0.8) * 1px);
+*/
+
+/* Clip-path
+	clip-path: polygon(x y, x y, x y, x y...); // отсчет от левого верхнего угла
+	clip-path: polygon(0px 0px, 50px 0px, 50px 50px, 0px 50px);
+
+	clip-path: url("#svg-map"); // ссылка на svg
+	#svg-map path {transform: scale(0.00113378, 0.00192307);} // настройка координат в css
+	<clipPath id="svg-map" clipPathUnits="objectBoundingBox"> // настройка координат в html
+*/
+
+/* Обход базового стиля автозаполнения форм
+	box-shadow: inset 0 1000px 0 0 #fff;
+	-webkit-text-fill-color: #222;
+*/
+
+/* Скроллбар
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+	&::-webkit-scrollbar-track {
+		background: $color-6;
+		border-radius: 5px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: $color-4;
+		border-radius: 5px;
+	}
+	- Opera
+	scrollbar-width: thin;
+	scrollbar-color: $color-4 #ddd;
+*/
+
+/* Размытие фона
+	backdrop-filter: blur(5px);
+*/
+
+/* Стилизованный нумерованный список
+	ol {
+		counter-reset: num;
+	}
+	li :before {
+		content: counter(num) '.';
+		counter-increment: num;
+	}
+*/
+
+/* Обводка текста вместо -webkit-text-stroke (scss)
+	$tshc: #218DB7;
+	$tsho: 1.8px;
+	text-shadow: 
+		$tsho $tsho 0 $tshc, 
+		-$tsho -#{$tsho} 0 $tshc, 
+		-$tsho $tsho 0 $tshc,
+		$tsho -#{$tsho} 0 $tshc,
+		$tsho 0 0 $tshc, 
+		-$tsho 0 0 $tshc, 
+		0 $tsho 0 $tshc,
+		0 -#{$tsho} 0 $tshc,
+		0 0 2px $tshc;
+*/
+
+/* Стилизованный адаптивный ползунок прокрутки (scss)
+	$sbc1: #949292;
+	$sbc2: #7A7979;
+	$sbc3: #AFA9A9;
+	&::-webkit-scrollbar-thumb {
+		border: solid 1px $sbc1;
+		background: linear-gradient(to bottom, 
+											$sbc1 4px,  
+											$sbc2 4px, 
+											$sbc2 5px, 
+											$sbc3 5px, 
+											$sbc3 6px, 
+											$sbc1 6px, 
+											$sbc1 7px,
+											$sbc2 7px, 
+											$sbc2 8px, 
+											$sbc3 8px, 
+											$sbc3 9px, 
+											$sbc1 9px, 
+											$sbc1 10px,
+											$sbc2 10px, 
+											$sbc2 11px, 
+											$sbc3 11px, 
+											$sbc3 12px, 
+											$sbc1 12px,  
+											$sbc1 calc(100% - 12px),
+											$sbc2 calc(100% - 12px), 
+											$sbc2 calc(100% - 11px), 
+											$sbc3 calc(100% - 11px), 
+											$sbc3 calc(100% - 10px), 
+											$sbc1 calc(100% - 10px), 
+											$sbc1 calc(100% - 9px),
+											$sbc2 calc(100% - 9px), 
+											$sbc2 calc(100% - 8px), 
+											$sbc3 calc(100% - 8px), 
+											$sbc3 calc(100% - 7px), 
+											$sbc1 calc(100% - 7px), 
+											$sbc1 calc(100% - 6px),
+											$sbc2 calc(100% - 6px), 
+											$sbc2 calc(100% - 5px), 
+											$sbc3 calc(100% - 5px), 
+											$sbc3 calc(100% - 4px), 
+											$sbc1 calc(100% - 4px));
+	}
+*/	
+</style>
+
+
+<!-- ШАБЛОНЫ JS ------------------------------------------>
+<script>
+	// Сортировка массива
+	// array.sort((a,b) => {return a - b});
+</script>
+
+
+<!-- Тестовые настройки ------------------------------------------>
+
+<style>
+	.test-block .container {max-width: 500px; display: flex; align-items: center; flex-direction: column; gap: 30px; padding: 50px 0 100px;}
+	.swiper-box, .swiper {width: 100%; position: relative;}
+</style>
+
+<a class="modal-link" href="#modal-info">MODAL</a>
