@@ -477,7 +477,7 @@ body {
 		background-color: #ccc;
 		overflow: hidden;
 		position: relative;
-		transition: all .1s linear;
+		transition: all $timer-hover linear;
 		img {
 			height: 100%;
 			width: 100%;
@@ -505,7 +505,7 @@ body {
 		border: solid 2px #999;
 		font-family: $ops;
 		font-size: 14px;
-		transition: all .1s linear;
+		transition: all $timer-hover linear;
 		& > * {
 			display: block;
 			margin-bottom: 4px;
