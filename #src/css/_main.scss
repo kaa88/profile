@@ -166,38 +166,7 @@ body {
 			}
 		}
 	}
-	&__contacts {
-		grid-column: span 2;
-		margin-right: 12px;
-		border-radius: 5px;
-		box-shadow: 1px 2px 3px 1px rgba(50, 50, 50, 0.4);
-		padding: 15px;
-		margin-left: 2px;
-		display: grid;
-		grid-template-columns: repeat(2, min-content);//225
-		grid-column-gap: 10px;
-		justify-content: space-around;
-		@media screen and (max-width: 480px) {
-			grid-template-columns: auto;
-		}
-	}
-	&__contacts-item {
-		display: flex;
-		align-items: center;
-		height: 40px;
-		font-size: 16px;
-		font-weight: bold;
-		.icon {
-			margin-right: 14px;
-			font-size: 30px;
-		}
-		p {display: inline-block;}
-		a {
-			font-family: $ops;
-			color: $color-5;
-			&:hover {text-decoration: underline;}
-		}
-	}
+	&__contacts {}
 	&__send-mail-link {
 		grid-column: span 2;
 		margin: -10px 0;
@@ -366,6 +335,39 @@ body {
 		}
 	}
 }
+.contacts {
+	grid-column: span 2;
+	margin-right: 12px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px 1px rgba(50, 50, 50, 0.4);
+	padding: 15px;
+	margin-left: 2px;
+	display: grid;
+	grid-template-columns: repeat(2, min-content);//225
+	grid-column-gap: 10px;
+	justify-content: space-around;
+	@media screen and (max-width: 480px) {
+		grid-template-columns: auto;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		font-size: 16px;
+		font-weight: bold;
+		.icon {
+			margin-right: 14px;
+			font-size: 30px;
+		}
+		p {display: inline-block;}
+		a, a:visited {
+			font-family: $ops;
+			color: $color-5;
+			&:hover {text-decoration: underline;}
+		}
+	}
+}
+
 .portfolio {
 	overflow: hidden;//
 	height: 96%;
@@ -528,5 +530,32 @@ body {
 	&:after {
 		content: ' />';
 		font-size: 20px;
+	}
+}
+
+.footer {
+	background-color: #555;
+	@media (min-width: 1276px) {
+		display: none;
+	}
+	&__container {}
+	.contacts {
+		margin-right: 2px;
+		grid-column-gap: 20px;
+		box-shadow: none;
+		opacity: 0.8;
+		&__item {
+			font-size: 14px;
+			font-weight: normal;
+			letter-spacing: 0.5px;
+			.icon {
+				margin-right: 8px;
+				font-size: 22px;
+				color: $color-1;
+			}
+			a, a:visited {
+				color: $color-1;
+			}
+		}
 	}
 }
