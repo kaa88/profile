@@ -127,24 +127,16 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-up2:before {
+  content: "\ea3a";
+}
+
 .icon-mail:before {
   content: "\ea83";
 }
 
-.icon-facebook:before {
-  content: "\ea91";
-}
-
-.icon-whatsapp:before {
-  content: "\ea93";
-}
-
 .icon-telegram:before {
   content: "\ea95";
-}
-
-.icon-twitter:before {
-  content: "\ea96";
 }
 
 .icon-vk:before {
@@ -490,12 +482,12 @@ i {
   user-select: none;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0.3s, opacity 0.3s, color 0.1s;
-  -o-transition: visibility 0.3s, opacity 0.3s, color 0.1s;
-  transition: visibility 0.3s, opacity 0.3s, color 0.1s;
+  -webkit-transition: visibility 0.3s, opacity 0.3s;
+  -o-transition: visibility 0.3s, opacity 0.3s;
+  transition: visibility 0.3s, opacity 0.3s;
 }
 
-.up-button:hover {
+.up-button:hover i {
   color: #313BA9;
 }
 
@@ -505,8 +497,12 @@ i {
 }
 
 .up-button i {
-  font-size: 30px;
-  margin-bottom: 12px;
+  font-size: 20px;
+  margin-bottom: 2px;
+  color: #333;
+  -webkit-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
 }
 
 html {

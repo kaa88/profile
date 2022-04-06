@@ -20,20 +20,14 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-up2:before {
+  content: "\ea3a";
+}
 .icon-mail:before {
   content: "\ea83";
 }
-.icon-facebook:before {
-  content: "\ea91";
-}
-.icon-whatsapp:before {
-  content: "\ea93";
-}
 .icon-telegram:before {
   content: "\ea95";
-}
-.icon-twitter:before {
-  content: "\ea96";
 }
 .icon-vk:before {
   content: "\ea98";

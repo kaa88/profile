@@ -17,8 +17,8 @@
 	user-select: none;
 	visibility: hidden;
 	opacity: 0;
-	transition: visibility .3s, opacity .3s, color $timer-hover;
-	&:hover {
+	transition: visibility .3s, opacity .3s;
+	&:hover i {
 		color: $color-4;
 	}
 	&._visible {
@@ -26,7 +26,9 @@
 		opacity: 1;
 	}
 	i {
-		font-size: 30px;
-		margin-bottom: 12px;
+		font-size: 20px;
+		margin-bottom: 2px;
+		color: #333;
+		transition: color $timer-hover;
 	}
 }
