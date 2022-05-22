@@ -20,7 +20,7 @@ const {src, dest} = require('gulp'),
 	through = require('through2'), // for gulp-scale-images
 	imagemin = require('gulp-imagemin-changba');
 
-const $project = 'dist';
+const $project = 'docs';
 const $source = '#src';
 const path = {
 	build: {
